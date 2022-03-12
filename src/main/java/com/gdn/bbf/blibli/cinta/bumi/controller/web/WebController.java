@@ -11,4 +11,24 @@ public class WebController {
     String index(Model model){
         return "index";
     }
+
+    @GetMapping("/kardus-bekas")
+    String kardus(Model model){
+        return "kardus-bekas";
+    }
+
+    @GetMapping("/ramah-lingkungan")
+    String isiUlang(Model model){
+        return "ramah-lingkungan";
+    }
+
+    @GetMapping("/pengiriman-hemat-kemasan")
+    String hematKemasan(Model model){
+        return "pengiriman-hemat-kemasan";
+    }
+
+    @GetMapping("/seller-eco-friendly")
+    String belanja(Model model){
+        return "seller-eco-friendly";
+    }
 }
